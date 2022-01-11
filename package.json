@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "npm run lint && npm run htmlhint && npm run stylelint",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "npx eslint ./src || exit 0",
+    "lint:fix": "npx eslint ./src --fix || exit 0",
+    "htmlhint": "npx htmlhint ./public || exit 0",
+    "stylelint": "npx stylelint \"./public/**/*.css\" || exit 0",
+    "clean": "rm -rf build/",
+    "clean-all": "npm run clean && rm -rf node_modules/"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@lnu/eslint-config": "^1.1.4",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsdoc": "^36.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "htmlhint": "^0.9.13",
+    "prettier": "^2.2.1",
+    "snowpack": "^3.3.7",
+    "stylelint": "^13.13.1"
+  }
+}
