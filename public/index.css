@@ -1,0 +1,87 @@
+html {
+  min-height: 100%;
+  background-image: url(quiz-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.user-info,
+.answer-container,
+.results-container,
+.highscore-container {
+  position: relative;
+  width: 40%;
+  margin-left: 10%;
+}
+
+.user-name,
+.answer {
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.question-container {
+  position: relative;
+  float: left;
+  width: 28%;
+  height: 60px;
+  margin-left: 10%;
+  margin-top: 5px;
+}
+
+.timer-container {
+  float: left;
+  width: 62%;
+  height: 65px;
+}
+
+.timer-container::after {
+  clear: both;
+}
+
+.message-after-answer {
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+
+.question-btn,
+.answer-btn {
+  background-color: rgb(106, 134, 228);
+  color: white;
+  border-radius: 3px;
+  min-width: 60px;
+  margin: 5px;
+  max-height: 20px;
+}
+
+.question-btn {
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+}
+
+.reset {
+  background-color: rgb(212, 58, 58);
+  color: white;
+  border-radius: 3px;
+  width: 60px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+footer a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
