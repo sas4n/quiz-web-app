@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created using create-snowpack-app" />
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <title>Quiz</title>
+  </head>
+  
+  <body>
+    <div class="header">
+      <h1>Quiz</h1>
+    </div>
+
+    <div class="instruction">
+      <p>This is a quiz with question relevant to  JavaScrpit, where user has 10 seconds to answer each question.<br>User must answer All question correctly. At the beginning user need to enter a nickname. If user successfully<br> answered all question 
+        user's nickname and time will be saved. finally a list of best time will be displayed. Enjoy playing!!</p>
+    </div>
+    <div class="user-info">
+      <input type="text" name="user-name" class="user-name" placeholder="Enter a nickname" >
+    </div>
+
+   
+
+    <div class="question-container">
+      <button type="button" class="question-btn" disabled="disabled">Start</button>
+      <p class="question-text hidden"></p>
+      
+     
+    </div>
+
+    <div class="timer-container">
+      <p class="timer hidden"></p>
+    </div>
+   
+    <div class="answer-container">
+      <div class="text-answer">
+        <input type="text" class="answer hidden" placeholder="write your answer here"  required />
+      </div>
+   
+      <div class="multiple-answer hidden">
+        <input type="radio" class="hidden" id="alt1" name="radio-btn" value="alt1">
+        <label for="alt1" class="hidden" name="radio-btn-label"></label><br>
+        <input type="radio" class="hidden" id="alt2" name="radio-btn" value="alt2">
+        <label for="alt2" class="hidden" name="radio-btn-label"></label><br>
+        <input type="radio" class="hidden" id="alt3" name="radio-btn" value="alt3">
+        <label for="alt3" class="hidden" name="radio-btn-label"></label><br>
+        <input type="radio" class="hidden" id="alt4" name="radio-btn" value="alt4">
+        <label for="alt4" class="hidden" name="radio-btn-label"></label>
+      </div>
+      <button type="button" class="answer-btn hidden" disabled= "disabled">Submit</button>
+      <button type="button" class="reset hidden"> Restart </button>
+      
+     
+    </div>
+    <div class="highscore-container hidden">
+      <p>High score of the first five users</p>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Username</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="results-container">
+      <p class="message-after-answer"></p>
+      <p class="game-message"></p>
+    </div>
+    <footer>
+      <a href="http://www.freepik.com">Background image designed by starline / Freepik</a>
+    </footer>
+    <script type="module" src="/dist/index.js" defer></script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
